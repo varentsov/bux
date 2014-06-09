@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
+  resources :services
+
   get 'pages/index'
 
   get 'pages/prices', as: :prices
 
   get 'pages/contacts', as: :contacts
 
-  get 'pages/services', as: :services
+  get 'pages/services', as: :servic
 
   get 'pages/order', as: :orser
 

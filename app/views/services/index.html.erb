@@ -1,0 +1,28 @@
+<main class="content">
+  <div class="pob_ban"></div>
+  <% @services.each do |service| %>
+  <div class="cnt">
+    <div class="line">
+      <div class="inline">
+        <%= link_to service_path(service) do %>
+            <h1><%= service.title %></h1>
+        <% end %>
+      </div>
+    </div>
+    <div class="cntr_cntn"><div class="">
+      <div class="pct_srv"><%= image_tag service.image_url %></div>
+      <div class="zgv_srv">
+        <h1><%= service.title %></h1>
+      </div>
+      <div class="txt_srv"><p><%= truncate(service.description, length: 1400) %></p>
+      </div>
+      <div class="service_price"><%= service.price %></div>
+      <%= link_to 'Поправить что-то здесь', edit_service_path(service) %>
+      <%= button_to 'Читать далее', service_path(service), class: 'btn btn-primary btn-lg btn-block', method: :get %>
+    </div>
+    </div>
+
+
+  </div>
+  <% end %>
+</main><!-- .content -->
