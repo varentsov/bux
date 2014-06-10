@@ -3,7 +3,7 @@
   <% @services.each do |service| %>
   <div class="cnt">
     <div class="line">
-      <div class="inline">
+      <div class="inline inline_index">
         <%= link_to service_path(service) do %>
             <h1><%= service.title %></h1>
         <% end %>
@@ -11,18 +11,15 @@
     </div>
     <div class="cntr_cntn"><div class="">
       <div class="pct_srv"><%= image_tag service.image_url %></div>
-      <div class="zgv_srv">
-        <h1><%= service.title %></h1>
-      </div>
-      <div class="txt_srv"><p><%= truncate(service.description, length: 1400) %></p>
+      <div class="txt_srv"><p><%= sanitize(service.span_this_please.truncate(1400)) %></p>
       </div>
       <div class="service_price"><%= service.price %></div>
       <%= link_to 'Поправить что-то здесь', edit_service_path(service) %>
+      <%= link_to 'Удалить эту услугу', service_path(service), method: :delete %>
       <%= button_to 'Читать далее', service_path(service), class: 'btn btn-primary btn-lg btn-block', method: :get %>
     </div>
     </div>
-
-
   </div>
   <% end %>
+  <%= will_paginate @services %>
 </main><!-- .content -->

@@ -4,7 +4,7 @@ class ServicesController < ApplicationController
   # GET /services
   # GET /services.json
   def index
-    @services = Service.all
+    @services = Service.paginate(:page => params[:page], :per_page => 3)
   end
 
   # GET /services/1

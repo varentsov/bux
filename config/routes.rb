@@ -7,9 +7,9 @@ Rails.application.routes.draw do
 
   get 'pages/contacts', as: :contacts
 
-  get 'pages/services', as: :servic
+  get 'pages/services'
 
-  get 'pages/order', as: :orser
+  get 'pages/order', as: :order
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
