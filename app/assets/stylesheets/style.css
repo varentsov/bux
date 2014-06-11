@@ -12,11 +12,11 @@ body {
 
 @font-face {
 		font-family: 'Russia';
-		src: url(../fonts/MJ9Il2jD.ttf);}
+		src: url(/fonts/MJ9Il2jD.ttf);}
 
 @font-face {
 		font-family:'Roboto';
-		src: url(../fonts/Roboto-Light.ttf);
+		src: url(/fonts/Roboto-Light.ttf);
 }
     
 .wrapper {
@@ -26,7 +26,7 @@ body {
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
-	background: #72CBCF;
+	background: #72A6CF;
 	height: 55px;
 	position: relative;
 	box-shadow: 0px 0px 13px 0px black;
@@ -82,7 +82,7 @@ body {
 
 .col:hover, .col:active {
 	color: #FFFFFF;
-	/*background-image: url(../images/hover.png);*/
+	/*background-image: url(/images/hover.png);*/
 	background-repeat: no-repeat;
 	text-decoration: none;
     border-bottom: #cb2e32 4px solid;
@@ -91,7 +91,7 @@ body {
 
 .banner {
 	height:350px;
-	background-image: url(../images/ban.jpg);
+	background-image: url(/images/ban.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position-x: 50%;
@@ -144,7 +144,7 @@ body {
 .circle {
 	width: 100px;
     height: 100px;
-    background-color: #72CBCF;
+    background-color: #72A6CF;
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
@@ -157,7 +157,7 @@ body {
 }
 
 .one, .two, .three, .four {
-		background-image: url(../images/icons.png)
+		background-image: url(/images/icons.png)
 }
 .two {
 	background-position-x: -100px;
@@ -196,7 +196,7 @@ body {
 	border-radius: 10px;
 	margin: 0 12px 0 0;
 	float:left;
-	background-image: url(../images/act.jpg)
+	background-image: url(/images/act.jpg)
 }
 
 .name_action {
@@ -225,6 +225,7 @@ body {
 	height: 250px;
 	display: table;
     margin-top: 55px;
+    width: 100%;
 }
 
 .sert {
@@ -252,7 +253,7 @@ body {
 }
 
 .pob_ban {
-	background-image: url(../images/serv.jpg);
+	background-image: url(/images/serv.jpg);
 	height: 200px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -344,7 +345,7 @@ body {
 }
 
 .cont_ban {
-	background-image: url(../images/contacts.jpg);
+	background-image: url(/images/contacts.jpg);
 	height: 200px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -381,7 +382,7 @@ body {
 }
 
 .cnt_crcl {
-	background-image: url(../images/cont.png);
+	background-image: url(/images/cont.png);
 }
 
 .cnt_inl {
@@ -400,7 +401,7 @@ margin-top: -39px;
 }
 
 .price_ban {
-	background-image: url(../images/price.jpg);
+	background-image: url(/images/price.jpg);
 	height: 200px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -452,7 +453,7 @@ margin-top: 40px;}
 .wvar {
 	width: 298px;
 	height: 37px;
-	background-image: url(../images/logo.png);
+	background-image: url(/images/logo.png);
 	margin: 0 auto;
 	margin-top: 25px;
 	float: left;
@@ -474,4 +475,28 @@ margin-top: 40px;}
 }
 .table_gray{
     background: whitesmoke;
+}
+
+.look_more {
+    float: left;
+    margin: 40px auto;
+    width: 100%;
+}
+
+.about {
+    text-align: justify;
+    width: 800px;
+    margin: 0 auto;
+    font-family: roboto;
+    line-height: 1.2;
+}
+
+.about p {
+    font-size: 20px;
+}
+
+.about p span {
+    color: #cb2e32;
+    font-size: 34px;
+    font-family: russia;
 }

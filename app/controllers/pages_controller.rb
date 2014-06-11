@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @services = Service.first(8).reverse
+    @services = Service.first(4).reverse
   end
 
   def prices
